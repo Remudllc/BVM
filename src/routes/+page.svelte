@@ -1,9 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="title-bar">
+	<h1>Time to Clean Up? We Can Help</h1>
+</div>
 
 <style>
+	.title-bar {
+		display: grid;
+		place-items: center;
+		border-bottom: 1px solid yellow;
+	}
+	h1 {
+		font-size: 2em;
+		text-align: center;
+		font-weight: normal;
+	}
 	h1,
-	p {
+	div {
 		color: white;
 	}
 </style>
