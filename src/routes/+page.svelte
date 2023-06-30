@@ -1,6 +1,7 @@
 <script lang="ts">
 	import List from '../components/list.svelte';
 	import Pigs from '../components/pigs.svelte';
+	import ValuePage from '../components/value_page.svelte';
 
 	let exterior: string[] = [
 		'Tires & Rims',
@@ -41,6 +42,7 @@
 		<div class="title">Time to Clean Up? We Can Help</div>
 		<img class="logo" src="/logo.png" alt="best value mobile detailing logo" />
 	</div>
+	<ValuePage />
 	<div class="main-page">
 		<div>
 			<List header="Exterior" items={exterior} />
