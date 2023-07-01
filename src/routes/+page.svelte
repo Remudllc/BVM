@@ -155,6 +155,7 @@
 		display: grid;
 		grid-template-columns: 1fr 2fr 1fr;
 		place-items: center;
+		align-items: start;
 	}
 	.logo {
 		width: 10rem;
@@ -169,7 +170,8 @@
 	}
 	.value {
 		grid-column: 1 / -1;
-		padding: 1rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
 	}
 	.description {
 		text-align: center;
