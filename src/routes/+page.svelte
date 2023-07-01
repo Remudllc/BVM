@@ -2,6 +2,7 @@
 	import List from '../components/list.svelte';
 	import Pigs from '../components/pigs.svelte';
 	import ValuePage from '../components/value_page.svelte';
+	import { phoneNumber, email } from '../data/contact';
 
 	let exterior: string[] = [
 		'Tires & Rims',
@@ -39,46 +40,50 @@
 <div class="app">
 	<div class="title-bar">
 		<img class="logo" src="/logo.png" alt="best value mobile detailing logo" />
-		<div class="title">Time to Clean Up? We Can Help</div>
+		<div>
+			<div class="title">Best Value Mobile Detailing</div>
+			<div>{$phoneNumber}</div>
+			<div>{$email}</div>
+		</div>
 		<img class="logo" src="/logo.png" alt="best value mobile detailing logo" />
 	</div>
-	<ValuePage />
+	<p class="description">Thanks for visiting our website. Below is a list of what we offer.</p>
 	<div class="main-page">
 		<div>
-			<h1>best value</h1>
+			<h1>Best Value</h1>
 			<p>Exterior</p>
 			<ol>
-				<li>TiresandRims</li>
+				<li>Tires and Rims</li>
 				<li>Pre-Rinse</li>
-				<li>PowerWashwithPremiumSoap</li>
-				<li>HandWashandDry</li>
-				<li>FloorMatsCleanedandRestored</li>
-				<li class="bolded">CarnaubaWaxApplication</li>
-				<li class="bolded">FrontEndbuffing</li>
-				<li>CeramicSealantApplication</li>
-				<li>TrimRestoration</li>
-				<li>PlasticRestoration</li>
-				<li>ExteriorGlass</li>
-				<li>VacuumandCleanTrunk</li>
+				<li>Power Wash with Premium Soap</li>
+				<li>Hand Wash and Dry</li>
+				<li>Floor Mats Cleaned and Restored</li>
+				<li class="bolded">Carnauba Wax Application</li>
+				<li class="bolded">Front End buffing</li>
+				<li>Ceramic Sealant Application</li>
+				<li>Trim Restoration</li>
+				<li>Plastic Restoration</li>
+				<li>Exterior Glass</li>
+				<li>Vacuumand Clean Trunk</li>
 			</ol>
 			<p>Interior</p>
 			<ol>
-				<li>BlowOut/InitialVacuum</li>
-				<li>RemoveGumandStickyThings</li>
-				<li class="bolded">DetailSolutionApplication,BrushingandVacuumingofCrevices,etc.</li>
-				<li class="bolded">ShampooCarpets</li>
-				<li class="bolded">ShampooFabricSeats</li>
-				<li>CleanandConditionLeatherSeats</li>
-				<li>ScotchGuardSeatsandCarpet</li>
-				<li>DoorJambs</li>
-				<li>Dash,Console,CupHolders,GloveBox,Etc.</li>
-				<li>Vinyl,RubberandPlasticRestoration</li>
-				<li>FinalVacuum</li>
-				<li>InteriorGlass</li>
+				<li>BlowOut / Initial Vacuum</li>
+				<li>Remove Gum and Sticky Things</li>
+				<li class="bolded">Detail Solution Application,Brushing and Vacuuming of Crevices, etc.</li>
+				<li class="bolded">Shampoo Carpets</li>
+				<li class="bolded">Shampoo Fabric Seats</li>
+				<li>Cleanand Condition Leather Seats</li>
+				<li>Scotch Guard Seats and Carpet</li>
+				<li>Door Jambs</li>
+				<li>Dash, Console, CupHolders, GloveBox, Etc.</li>
+				<li>Vinyl, Rubber and Plastic Restoration</li>
+				<li>Final Vacuum</li>
+				<li>Interior Glass</li>
 			</ol>
 		</div>
 		<div>
-			<h1>good value</h1>
+			<h1>Good Value</h1>
 			<p>Exterior</p>
 			<ol>
 				<li>Tires and Rims</li>
@@ -107,7 +112,7 @@
 			</ol>
 		</div>
 		<div>
-			<h1>add-ons</h1>
+			<h1>Add-Ons</h1>
 			<ol>
 				<li>Clay Bar</li>
 				<li>Buffing</li>
@@ -124,6 +129,9 @@
 				<li>Light Scratch Removal</li>
 			</ol>
 		</div>
+		<div class="value">
+			<ValuePage />
+		</div>
 		<div>
 			<List header="Exterior" items={exterior} />
 		</div>
@@ -132,7 +140,7 @@
 			<List header="Interior" items={interior} />
 		</div>
 	</div>
-	<div class="footer">info@bestvaluedetailing.com</div>
+	<div class="footer">{$email}</div>
 </div>
 
 <style>
@@ -158,6 +166,13 @@
 		font-size: 2em;
 		text-align: center;
 		font-weight: normal;
+	}
+	.value {
+		grid-column: 1 / -1;
+		padding: 1rem;
+	}
+	.description {
+		text-align: center;
 	}
 	.footer {
 		display: grid;

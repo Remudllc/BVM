@@ -21,7 +21,10 @@
 		Schedule. We Also Provide Discounts for Clients Who Give Us Referrals.
 		<br />
 		<br />
-		Thanks in advance for letting us clean, shine and protect your vehicle and earn your business!
+		<b
+			>Thanks in advance for letting us clean, shine and protect your vehicle and earn your
+			business!</b
+		>
 	</p>
 </div>
 
