@@ -21,7 +21,7 @@
 		Schedule. We Also Provide Discounts for Clients Who Give Us Referrals.
 		<br />
 		<br />
-		<b
+		<b class="final-note"
 			>Thanks in advance for letting us clean, shine and protect your vehicle and earn your
 			business!</b
 		>
@@ -29,6 +29,9 @@
 </div>
 
 <style>
+	.final-note {
+		font-size: 1.5rem;
+	}
 	div {
 		width: 80%;
 		margin: auto;

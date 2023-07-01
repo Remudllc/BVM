@@ -40,12 +40,15 @@
 <div class="app">
 	<div class="title-bar">
 		<img class="logo" src="/logo.png" alt="best value mobile detailing logo" />
-		<div>
+		<div class="header-text">
 			<div class="title">Best Value Mobile Detailing</div>
 			<div>{$phoneNumber}</div>
 			<div>{$email}</div>
 		</div>
 		<img class="logo" src="/logo.png" alt="best value mobile detailing logo" />
+	</div>
+	<div class="header-logo">
+		<img src="/logo.png" alt="best value mobile detailing logo" />
 	</div>
 	<p class="description">Thanks for visiting our website. Below is a list of what we offer.</p>
 	<div class="main-page">
@@ -64,7 +67,7 @@
 				<li>Trim Restoration</li>
 				<li>Plastic Restoration</li>
 				<li>Exterior Glass</li>
-				<li>Vacuumand Clean Trunk</li>
+				<li>Vacuum and Clean Trunk</li>
 			</ol>
 			<p>Interior</p>
 			<ol>
@@ -140,7 +143,6 @@
 			<List header="Interior" items={interior} />
 		</div>
 	</div>
-	<div class="footer">{$email}</div>
 </div>
 
 <style>
@@ -159,6 +161,15 @@
 	}
 	.logo {
 		width: 10rem;
+	}
+	.header-text {
+		text-align: center;
+	}
+	.header-logo {
+		padding-top: 1rem;
+		display: flex;
+		justify-content: center;
+		height: 45vh;
 	}
 	li.bolded {
 		color: lightgreen;

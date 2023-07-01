@@ -1,17 +1,20 @@
 <script lang="ts">
-	import { phoneNumber } from '../data/contact';
+	import { phoneNumber, email } from '../data/contact';
 </script>
 
 <div class="container">
-	<div class="title">Time to Clean Up? We Can Help</div>
+	<div class="title">Time to Clean Up? We Can Help.</div>
 	<img class="pigs" src="/pigs.png" alt="dirty-pigs" />
-	<p class="number">{$phoneNumber}</p>
+	<div class="number">
+		<p>{$phoneNumber}<br />{$email}</p>
+	</div>
 </div>
 
 <style>
 	.number {
 		color: yellow;
 		position: absolute;
+		text-align: center;
 		left: 50%;
 		bottom: 0.5rem;
 		font-size: 2rem;

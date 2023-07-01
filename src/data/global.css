@@ -1,6 +1,9 @@
 html, li, p  {
   color: yellow;
 }
+div {
+  color: #e29800;
+}
 html, li, p, div  {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   font-size: 1.2rem;
