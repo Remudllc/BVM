@@ -30,7 +30,7 @@
 		'Fabric Shampoo',
 		'Fabric & Carpet Protectant',
 		'Leather Clean & Condition',
-		'Vinyl, Rubber & Plastic Restoration',
+		'Trim, Plastic & Vinyl Restoration',
 		'Odor Elimination',
 		'Cupholders, Console, Dash and More',
 		'Car Seats'
@@ -62,12 +62,11 @@
 				<li>Hand Wash and Dry</li>
 				<li>Floor Mats Cleaned and Restored</li>
 				<li class="bolded">Carnauba Wax Application</li>
-				<li class="bolded">Front End buffing</li>
+				<li class="bolded">Front End Buffing</li>
 				<li>Ceramic Sealant Application</li>
-				<li>Trim Restoration</li>
-				<li>Plastic Restoration</li>
 				<li>Exterior Glass</li>
 				<li>Vacuum and Clean Trunk</li>
+				<li>Trim, Plasic & Vinyl Restoration</li>
 			</ol>
 			<p>Interior</p>
 			<ol>
@@ -76,11 +75,11 @@
 				<li class="bolded">Detail Solution Application,Brushing and Vacuuming of Crevices, etc.</li>
 				<li class="bolded">Shampoo Carpets</li>
 				<li class="bolded">Shampoo Fabric Seats</li>
-				<li>Cleanand Condition Leather Seats</li>
+				<li>Clean and Condition Leather Seats</li>
 				<li>Scotch Guard Seats and Carpet</li>
 				<li>Door Jambs</li>
 				<li>Dash, Console, CupHolders, GloveBox, Etc.</li>
-				<li>Vinyl, Rubber and Plastic Restoration</li>
+				<li>Trim, Vinyl and Plastic Restoration</li>
 				<li>Final Vacuum</li>
 				<li>Interior Glass</li>
 			</ol>
@@ -93,7 +92,7 @@
 				<li>Pre-Rinse</li>
 				<li>Power Wash with Premium Soap</li>
 				<li>Hand Wash and Dry</li>
-				<li>Floor Mats</li>
+				<li>Floor Mats Cleaned and Restored</li>
 				<li>Wet Wax Application</li>
 				<li>Trim Restoration</li>
 				<li>Plastic Restoration</li>
@@ -101,14 +100,13 @@
 			</ol>
 			<p>Interior</p>
 			<ol>
-				<li>Blow Out</li>
-				<li>Initial Vacuum</li>
+				<li>Blow Out / Initial Vacuum</li>
 				<li>Remove Gum and Sticky Things</li>
 				<li>Steam Clean Seats, Carpet, and Fabric</li>
 				<li>Scotch Guard Seats and Carpet</li>
 				<li>Door Jambs</li>
 				<li>Dash, Console, Cup Holders, Glove Box, Etc.</li>
-				<li>Vinyl, Rubber and Plastic Restoration</li>
+				<li>Trim, Plastic and Vinyl Restoration</li>
 				<li>Plastic Restoration</li>
 				<li>Final Vacuum</li>
 				<li>Interior Glass</li>
@@ -149,11 +147,9 @@
 	.title-bar {
 		display: grid;
 		place-items: center;
-		border-bottom: 1px solid yellow;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 	.main-page {
-		padding-top: 2rem;
 		display: grid;
 		grid-template-columns: 1fr 2fr 1fr;
 		place-items: center;
@@ -187,11 +183,7 @@
 	.description {
 		text-align: center;
 	}
-	.footer {
-		display: grid;
-		place-items: center;
-		color: yellow;
-		font-size: 1rem;
-		padding-top: 1rem;
+	h1 {
+		color: var(--yellow);
 	}
 </style>

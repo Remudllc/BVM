@@ -12,13 +12,15 @@
 
 <style>
 	.number {
-		color: yellow;
 		position: absolute;
 		text-align: center;
 		left: 50%;
 		bottom: 0.5rem;
 		font-size: 2rem;
 		transform: translateX(-50%);
+	}
+	p {
+		color: var(--yellow);
 	}
 	.container {
 		position: relative;
@@ -27,7 +29,7 @@
 		width: 100%;
 	}
 	.title {
-		color: yellow;
+		color: var(--yellow);
 		position: absolute;
 		left: 50%;
 		top: 0.2rem;

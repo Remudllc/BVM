@@ -31,6 +31,7 @@
 <style>
 	.final-note {
 		font-size: 1.5rem;
+		color: var(--yellow);
 	}
 	div {
 		width: 80%;

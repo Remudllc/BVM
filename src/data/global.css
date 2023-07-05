@@ -1,8 +1,13 @@
-html, li, p  {
-  color: yellow;
+:root {
+  --yellow: #e8c400;
+  --gold: #e29800;
+}
+
+body {
+  color: var(--yellow);
 }
 div {
-  color: #e29800;
+  color: var(--gold);
 }
 html, li, p, div  {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
