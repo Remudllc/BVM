@@ -1,0 +1,15 @@
+:root {
+  --yellow: #e8c400;
+  --gold: #e29800;
+}
+
+body {
+  color: var(--yellow);
+}
+div {
+  color: var(--gold);
+}
+html, li, p, div  {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+}
